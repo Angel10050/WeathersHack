@@ -2,7 +2,6 @@ import React from "react";
 import CardsForecast from "./../forecastCards/CardsForecast";
 
 const OrganizedForecastInfo = ({ forecastData }) => {
-  console.log(forecastData);
   const separateByDays = [];
 
   const handlerDays = forecastData.list.map(forecast =>
