@@ -37,7 +37,7 @@ class Main extends Component {
     });
     try {
       const query = axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.KEY_OPEN_WEATHER}`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
         //poner la key de la api en un archivo y pasarlo al gitIgnore
       );
       const response = await query;
