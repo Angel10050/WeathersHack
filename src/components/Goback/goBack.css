@@ -1,0 +1,30 @@
+div.go__back-container {
+  width: 40px;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  transition: all 2s;
+  border-radius: 0 5px 5px 0;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+.arrow__go-back {
+  width: 25px;
+  position: absolute;
+  left: 6px;
+  top: 300px;
+}
+div.go__back-container:hover img.arrow__go-back {
+  animation: move 2s infinite;
+  transition: all 3s;
+}
+div.go__back-container:hover {
+  background-color: white;
+  transition: all 2s;
+  border-radius: 0 20px 20px 0;
+}
+@keyframes move {
+  0% {
+    transform: scaleY(-1);
+  }
+}

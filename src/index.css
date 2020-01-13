@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.containerBackground {
+  background: url(https://i.ibb.co/CmG3x2y/silhouette-photo-of-a-mountain-during-sunset-114979.jpg)
+    center/cover;
+}
+@keyframes colors {
+  0% {
+    background-color: rgba(0, 0, 0, 0.308);
+  }
+  5% {
+    background-color: rgba(64, 0, 93, 0.431);
+  }
+}

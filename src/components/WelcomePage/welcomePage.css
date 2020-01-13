@@ -1,0 +1,36 @@
+.all__welcome_container {
+  height: 100vh;
+}
+.welcome__container {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  flex-direction: column;
+}
+.welcome__title {
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  margin-bottom: 100px;
+  margin-top: 80px;
+  text-align: center;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.app_features {
+  text-align: left;
+  letter-spacing: 3px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 60px;
+}
+.feature_description {
+  margin: 30px 0;
+  list-style: none;
+}
+.welcome__description {
+  margin-bottom: 30px;
+  margin-top: 100px;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}

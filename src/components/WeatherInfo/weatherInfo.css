@@ -1,0 +1,66 @@
+.weather__all-container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.view_description_container {
+  text-align: center;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.513);
+}
+.app__title {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  margin-top: 20px;
+  text-align: center;
+}
+.app_view_description {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.weather__card {
+  margin-top: 50px;
+  border: 1px solid rgba(79, 5, 129, 0.575);
+  padding: 40px 80px 40px;
+  border-radius: 5px;
+  box-shadow: 0.5px 1px 8px 2px rgba(0, 6, 83, 0.459);
+}
+.weather__main-city {
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+.weather__location {
+  padding-left: 10px;
+}
+
+.main__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather__icon {
+  width: 140px;
+}
+.temperature {
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+.weather__description {
+  font-size: 35px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 6px;
+  left: 4px;
+}
+.weather__values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
