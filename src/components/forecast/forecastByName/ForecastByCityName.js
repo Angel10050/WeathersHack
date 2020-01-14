@@ -25,7 +25,7 @@ class ForecastByCityName extends Component {
     });
     try {
       const response = axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityName}&units=metric&APPID=${process.env.REACT_APP_KEY_OPEN_WEATHER_FORECAST}`
+        `http://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityName}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER_FORECAST}`
         //poner la key de la api en un archivo y pasarlo al gitIgnore
       );
       const query = await response;

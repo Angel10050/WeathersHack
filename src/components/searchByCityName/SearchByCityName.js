@@ -31,7 +31,7 @@ class SearchByCity extends Component {
     });
     try {
       const response = axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&units=metric&APPID=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
         //poner la key de la api en un archivo y pasarlo al gitIgnore
       );
       const query = await response;
