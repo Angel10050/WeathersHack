@@ -2,6 +2,9 @@ div.go__back-container {
   width: 40px;
   height: 100vh;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0px;
   z-index: 2;
   transition: all 2s;
@@ -11,8 +14,6 @@ div.go__back-container {
 .arrow__go-back {
   width: 25px;
   position: absolute;
-  left: 6px;
-  top: 300px;
 }
 div.go__back-container:hover img.arrow__go-back {
   animation: move 2s infinite;
@@ -27,4 +28,13 @@ div.go__back-container:hover {
   0% {
     transform: scaleY(-1);
   }
+}
+
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 425px) {
+}
+@media screen and (max-width: 320px) {
 }

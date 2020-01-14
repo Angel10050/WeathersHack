@@ -7,12 +7,10 @@ const WeatherInfo = props => {
   return (
     <div className="containerBackground weather__all-container">
       {props.children[0]}
-
       <article className="view_description_container">
         <h2 className="app__title">WeathersHack</h2>
         <span className="app_view_description">{props.view_description}</span>
       </article>
-
       <section className="weather__card">
         <h1 className="weather__main-city">
           <strong className="weather__location">
@@ -25,7 +23,7 @@ const WeatherInfo = props => {
             <section className="current__data" key={item.id}>
               <div className="main__description">
                 <img
-                  src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
                   alt="icon about the main weather"
                   className="weather__icon"
                 />
@@ -37,13 +35,13 @@ const WeatherInfo = props => {
                 {item.description.charAt(0).toUpperCase() +
                   item.description.slice(1)}
               </p>
-              <article className="weather__values">
-                <p>Humudity {weather.main.humidity}%</p>
-                <p>Wind {weather.wind.speed}M/s</p>
-              </article>
             </section>
           );
         })}
+        <article className="weather__values">
+          <p>Humudity {weather.main.humidity}%</p>
+          <p>Wind {weather.wind.speed}M/s</p>
+        </article>
       </section>
       {props.children[1]}
       {props.children[2]}

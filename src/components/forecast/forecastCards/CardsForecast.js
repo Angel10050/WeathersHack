@@ -16,7 +16,7 @@ const CardsForecast = ({ forecastPerDay }) => {
               <p>{new Intl.DateTimeFormat("en-US", options).format(days[i])}</p>
               <div className="weather__temp__icon">
                 <img
-                  src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
                   alt="icon about the weather"
                   className="forecast__icon"
                 />

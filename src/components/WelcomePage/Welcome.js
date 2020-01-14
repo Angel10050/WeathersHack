@@ -6,15 +6,14 @@ import GoAhead from "./../goAhead/GoAhead";
 
 const Welcome = props => (
   <section className="all__welcome_container containerBackground">
+    <GoAhead
+      onClick={() => {
+        props.HandlerfetchData();
+        props.handlerNextView();
+      }}
+    />
     <div className="welcome__container">
       <p className="welcome__title">¡¡ Welcome to WeathersHack !!</p>
-
-      <GoAhead
-        onClick={() => {
-          props.HandlerfetchData();
-          props.handlerNextView();
-        }}
-      />
 
       <ul className="app_features">
         <li className="feature_description">
