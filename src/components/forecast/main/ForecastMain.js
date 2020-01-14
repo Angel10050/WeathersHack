@@ -30,7 +30,7 @@ class ForecastMain extends Component {
 
     try {
       const query = axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER_FOUR}`
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
       );
       const response = await query;
       this.setState({
