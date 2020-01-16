@@ -17,11 +17,13 @@ const Welcome = props => (
 
       <ul className="app_features">
         <li className="feature_description">
-          - The weather where you are and where you go.
+          - The weather where you are <br /> and where you go.
         </li>
         <li className="feature_description">- Easy and fast.</li>
+        <li className="feature_description">- forecasts for the whole week</li>
         <li className="feature_description">
-          - Clear, simple and accurate information. Everything you need.
+          - Clear, simple and accurate information.
+          <br /> Everything you need.
         </li>
       </ul>
     </div>

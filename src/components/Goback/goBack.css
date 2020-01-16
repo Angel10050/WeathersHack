@@ -29,12 +29,13 @@ div.go__back-container:hover {
     transform: scaleY(-1);
   }
 }
-
-@media screen and (max-width: 1400px) {
-}
-@media screen and (max-width: 767px) {
-}
 @media screen and (max-width: 425px) {
-}
-@media screen and (max-width: 320px) {
+  div.go__back-container {
+    top: 0px;
+    height: 50px;
+    width: 100%;
+  }
+  .arrow__go-back {
+    transform: rotate(90deg);
+  }
 }
