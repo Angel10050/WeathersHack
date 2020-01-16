@@ -13,7 +13,9 @@ const CardsForecast = ({ forecastPerDay }) => {
         {dayWeatherInfo.map((item, i) => {
           return (
             <section key={i} className="forecast__card">
-              <p>{new Intl.DateTimeFormat("en-US", options).format(days[i])}</p>
+              <p className="days__of__data">
+                {new Intl.DateTimeFormat("en-US", options).format(days[i])}
+              </p>
               <div className="weather__temp__icon">
                 <img
                   src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}

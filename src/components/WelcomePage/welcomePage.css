@@ -17,7 +17,6 @@
   letter-spacing: 5px;
   font-weight: lighter;
   margin-bottom: 100px;
-  margin-top: 80px;
   text-align: center;
   text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
@@ -40,7 +39,7 @@
   font-size: 15px;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1400px) {
   .welcome__title {
     font-size: 60px;
   }

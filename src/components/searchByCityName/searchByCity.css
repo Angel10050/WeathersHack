@@ -14,7 +14,6 @@
   font-size: 50px;
   letter-spacing: 5px;
   font-weight: lighter;
-  margin-top: 50px;
   text-align: center;
 }
 .app_title_description {
@@ -100,7 +99,7 @@
   font-style: italic;
   text-align: center;
 }
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1400px) {
   .search_bar_title {
     font-size: 65px;
   }
