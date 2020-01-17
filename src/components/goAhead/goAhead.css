@@ -39,6 +39,7 @@ div.go__ahead-container:hover {
     bottom: 0px;
     height: 50px;
     width: 100%;
+    right: none;
   }
   .arrow__go-ahead {
     transform: rotate(90deg);

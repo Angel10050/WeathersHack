@@ -37,7 +37,10 @@ class Main extends Component {
     });
     try {
       const query = axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${
+          this.props.latitude
+        }&lon=${this.props.longitude}&units=metric&appid=${process.env
+          .REACT_APP_KEY_OPEN_WEATHER || "c2c5800fa1c4f40a28ed1db4dbf79a3a"}`
       );
       const response = await query;
       this.setState({
