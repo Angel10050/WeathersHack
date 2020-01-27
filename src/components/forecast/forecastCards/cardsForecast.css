@@ -55,7 +55,7 @@
     height: 77px;
   }
   .forecast__card__container {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
 }
 @media screen and (max-width: 320px) {
