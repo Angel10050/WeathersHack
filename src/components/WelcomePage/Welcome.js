@@ -5,7 +5,7 @@ import "./welcomePage.css";
 import GoAhead from "./../goAhead/GoAhead";
 
 const Welcome = props => (
-  <section className="all__welcome_container containerBackground">
+  <section className="containerBackground all__welcome_container">
     <GoAhead
       onClick={() => {
         props.HandlerfetchData();

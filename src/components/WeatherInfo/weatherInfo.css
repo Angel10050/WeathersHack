@@ -101,9 +101,6 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .app__title {
-    font-size: 36px;
-  }
   .weather__card {
     padding: 15px 22px 15px;
   }
@@ -115,6 +112,12 @@
   }
   .weather__icon {
     width: 120px;
+  }
+  .view_description_container {
+    display: none;
+  }
+  .containerBackground {
+    height: auto;
   }
 }
 @media screen and (max-width: 320px) {
