@@ -119,6 +119,9 @@
   .containerBackground {
     height: auto;
   }
+  .weather__all-container {
+    height: auto;
+  }
 }
 @media screen and (max-width: 320px) {
 }
