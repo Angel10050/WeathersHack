@@ -1,5 +1,6 @@
 .forecast__card__container {
   display: flex;
+  padding-bottom: 45px;
 }
 .forecast__card {
   display: flex;
@@ -53,9 +54,6 @@
   }
   .weather__temp__icon {
     height: 77px;
-  }
-  .forecast__card__container {
-    padding-bottom: 45px;
   }
 }
 @media screen and (max-width: 320px) {
