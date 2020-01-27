@@ -45,3 +45,13 @@
 ::-webkit-scrollbar {
   width: 2px;
 }
+
+@media screen and (max-width: 425px) {
+  .welcome__title {
+    font-size: 26px;
+  }
+  .containerBackground {
+    background: url(https://i.ibb.co/By8vcbd/silhouette-photo-of-a-mountain-during-sunset-114979.jpg)
+      center/cover;
+  }
+}
