@@ -57,6 +57,9 @@
   .forecast__card__container {
     padding-bottom: 45px;
   }
+  .days__of__data {
+    font-weight: 600;
+  }
 }
 @media screen and (max-width: 320px) {
 }
