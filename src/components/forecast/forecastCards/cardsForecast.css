@@ -54,6 +54,9 @@
   .weather__temp__icon {
     height: 77px;
   }
+  .forecast__card__container {
+    padding-bottom: 50px;
+  }
 }
 @media screen and (max-width: 320px) {
 }
