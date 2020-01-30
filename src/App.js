@@ -25,7 +25,7 @@ class App extends Component {
       <Main
         longitude={this.state.longitude}
         latitude={this.state.latitude}
-        coordinates={this.state.thereArecoordinates}
+        coordinates={this.state.thereAreCoordinates}
         geolocation={this.geolocation}
       />
     );
