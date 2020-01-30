@@ -7,6 +7,9 @@ class App extends Component {
     latitude: "",
     thereAreCoordinates: false
   };
+  componentDidMount() {
+    this.geolocation();
+  }
   geolocation = () => {
     navigator.geolocation.getCurrentPosition(position => {
       const location = position;
@@ -18,7 +21,6 @@ class App extends Component {
     });
   };
   render() {
-    this.geolocation();
     return (
       <Main
         longitude={this.state.longitude}
