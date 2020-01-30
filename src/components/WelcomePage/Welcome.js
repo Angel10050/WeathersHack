@@ -1,8 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 import "./welcomePage.css";
-// import sunCloudLogo from "../../img/cloud-sun-solid.svg";
+
 import GoAhead from "./../goAhead/GoAhead";
+import Modal from "../modal/Modal";
 
 const Welcome = props => (
   <section className="containerBackground all__welcome_container">
@@ -27,6 +29,7 @@ const Welcome = props => (
         </li>
       </ul>
     </div>
+    {props.coordinates ? "" : <Modal />}
   </section>
 );
 

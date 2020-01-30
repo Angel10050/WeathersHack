@@ -4,14 +4,16 @@ import Main from "./components/main/Main";
 class App extends Component {
   state = {
     longitude: "",
-    latitude: ""
+    latitude: "",
+    thereAreCoordinates: false
   };
   geolocation = () => {
     navigator.geolocation.getCurrentPosition(position => {
       const location = position;
       return this.setState({
         longitude: location.coords.longitude,
-        latitude: location.coords.latitude
+        latitude: location.coords.latitude,
+        thereAreCoordinates: true
       });
     });
   };
@@ -21,6 +23,7 @@ class App extends Component {
       <Main
         longitude={this.state.longitude}
         latitude={this.state.latitude}
+        coordinates={this.state.coordinates}
         geolocation={this.geolocation}
       />
     );

@@ -66,6 +66,7 @@ class Main extends Component {
         <Welcome
           HandlerfetchData={this.fetchData}
           handlerNextView={this.handlerNextView}
+          coordinates={this.props.coordinates}
         />
       );
     } else if (this.state.nextView === 1) {
