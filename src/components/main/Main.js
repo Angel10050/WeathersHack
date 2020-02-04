@@ -36,12 +36,12 @@ class Main extends Component {
       error: null
     });
     try {
-      const query = axios.get(
+      const query = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
       );
-      const response = await query;
+
       this.setState({
-        weatherInfo: response.data,
+        weatherInfo: query.data,
         loading: false
       });
     } catch (error) {

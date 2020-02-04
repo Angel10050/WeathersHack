@@ -24,10 +24,10 @@ class ForecastByCityName extends Component {
       error: null
     });
     try {
-      const response = axios.get(
+      const query = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityName}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
       );
-      const query = await response;
+
       this.setState({
         loading: false,
         error: null,

@@ -124,4 +124,13 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .weather__location {
+    padding-left: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .weather__card {
+    width: auto;
+    height: 215px;
+  }
 }

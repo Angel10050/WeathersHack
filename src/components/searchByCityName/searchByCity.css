@@ -131,4 +131,27 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .searchBar {
+    height: 105vh;
+  }
+  .cityName {
+    width: 193px;
+    height: 15px;
+  }
+  .search_button {
+    width: 32px;
+    padding: 1px;
+  }
+  .search_icon {
+    width: 20px;
+  }
+  .search_instructions {
+    padding: 0 15px;
+  }
+  .search_bar_title {
+    font-size: 30px;
+  }
+  .app_title_description {
+    font-size: 11px;
+  }
 }

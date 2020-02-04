@@ -21,3 +21,28 @@
   width: 200px;
   filter: invert(100%);
 }
+@media screen and (min-width: 1401px) {
+  .allowArrow {
+    top: 160px;
+    left: 295px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .allowArrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .allowArrow {
+    display: none;
+  }
+  .modal__txt {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .allowArrow {
+    display: none;
+  }
+}

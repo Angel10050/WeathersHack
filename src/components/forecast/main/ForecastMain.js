@@ -29,14 +29,14 @@ class ForecastMain extends Component {
     });
 
     try {
-      const query = axios.get(
+      const query = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?lat=${this.props.latitude}&lon=${this.props.longitude}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
       );
-      const response = await query;
+
       this.setState({
         loading: false,
         error: null,
-        forecastData: response.data,
+        forecastData: query.data,
         showForecast: true
       });
     } catch (error) {

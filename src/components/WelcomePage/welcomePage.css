@@ -59,4 +59,7 @@
 }
 
 @media screen and (max-width: 320px) {
+  .app_features {
+    padding: 0 5px 5px 5px;
+  }
 }

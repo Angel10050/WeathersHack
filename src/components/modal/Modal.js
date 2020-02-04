@@ -9,7 +9,7 @@ const Modal = () => {
     <section className="modalContainer">
       <div className="modalContainer">
         <img className="allowArrow" src={arrow} alt="arrow to allow location" />
-        <h1>
+        <h1 className="modal__txt">
           WeathersHack needs your location. <br /> Please "Allow" it.
         </h1>
       </div>
