@@ -1,8 +1,8 @@
 import React from "react";
 import "./cardsForecast.css";
 
-const CardsForecast = ({ forecastPerDay }) => {
-  const days = forecastPerDay.map(day => new Date(day.dt * 1000));
+const CardsForecast = ({ forecastPerDay, days }) => {
+  
   const options = { weekday: "long" };
   const mainInfo = forecastPerDay.map(day => day.main.temp);
   const dayWeatherInfo = forecastPerDay.map(day => day.weather[0]);

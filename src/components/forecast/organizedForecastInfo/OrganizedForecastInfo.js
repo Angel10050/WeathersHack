@@ -17,8 +17,9 @@ const OrganizedForecastInfo = ({ forecastData }) => {
   }
   separateByDays.shift();
   const dayByDayThreePM = separateByDays.map(item => item[3]);
+  const days = dayByDayThreePM.map(day => new Date(day.dt * 1000));
 
-  return <CardsForecast forecastPerDay={dayByDayThreePM} />;
+  return <CardsForecast forecastPerDay={dayByDayThreePM} days={days} />;
 };
 
 export default OrganizedForecastInfo;

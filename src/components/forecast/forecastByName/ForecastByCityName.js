@@ -25,7 +25,7 @@ class ForecastByCityName extends Component {
     });
     try {
       const query = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityName}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityName}&units=metric&appid=${process.env.REACT_APP_KEY_OPEN_WEATHER} || `
       );
 
       this.setState({
